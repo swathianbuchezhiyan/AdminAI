@@ -11,103 +11,7 @@ from models.predict import (
 
 
 st.title("📝 Submit Complaint")
-
 st.subheader("Citizen Complaint Form")
-
-
-# ---------------------------------------
-# Citizen Details
-# ---------------------------------------
-
-citizen_name = st.text_input(
-    "👤 Full Name"
-)
-
-mobile_number = st.text_input(
-    "📱 Mobile Number"
-)
-
-email = st.text_input(
-    "📧 Email (Optional)"
-)
-
-
-# ---------------------------------------
-# Location
-# ---------------------------------------
-
-district = st.selectbox(
-    "📍 Select District",
-    [
-        "Chennai",
-        "Coimbatore",
-        "Madurai",
-        "Trichy",
-        "Thanjavur",
-        "Mayiladuthurai",
-        "Sirkali",
-        "Salem",
-        "Tirunelveli",
-        "Other"
-    ]
-)
-
-
-# ---------------------------------------
-# Complaint Details
-# ---------------------------------------
-
-complaint_title = st.text_input(
-    "📝 Complaint Title"
-)
-
-complaint_description = st.text_area(
-    "📄 Complaint Description (Tamil / English)",
-    height=150
-)
-
-
-# ---------------------------------------
-# Image Upload
-# ---------------------------------------
-
-uploaded_file = st.file_uploader(
-    "📷 Upload Complaint Image",
-    type=[
-        "jpg",
-        "jpeg",
-        "png"
-    ]
-)
-
-
-image_path = None
-
-
-if uploaded_file is not None:
-
-    os.makedirs(
-        "uploads",
-        exist_ok=True
-    )
-
-    image_path = os.path.join(
-        "uploads",
-        uploaded_file.name
-    )
-
-    with open(
-        image_path,
-        "wb"
-    ) as file:
-
-        file.write(
-            uploaded_file.getbuffer()
-        )
-
-    st.success(
-        "📷 Image uploaded successfully"
-    )
 
 
 # ---------------------------------------
@@ -157,14 +61,14 @@ def translate_tamil(text):
 
     cleaned_text = text.strip()
 
-    if cleaned_text in tamil_complaints:
-        return tamil_complaints[cleaned_text]
-
-    return text
+    return tamil_complaints.get(
+        cleaned_text,
+        text
+    )
 
 
 # ---------------------------------------
-# Initialize Session State
+# Session State
 # ---------------------------------------
 
 if "complaint_submitted" not in st.session_state:
@@ -188,12 +92,96 @@ if "complaint_summary" not in st.session_state:
 if "complaint_id" not in st.session_state:
     st.session_state.complaint_id = ""
 
+if "translated_complaint" not in st.session_state:
+    st.session_state.translated_complaint = ""
+
 
 # ---------------------------------------
-# Submit Complaint
+# Complaint Form
 # ---------------------------------------
 
-if st.button("🚀 Submit Complaint"):
+with st.form("complaint_form"):
+
+    # -----------------------------------
+    # Citizen Details
+    # -----------------------------------
+
+    citizen_name = st.text_input(
+        "👤 Full Name"
+    )
+
+    mobile_number = st.text_input(
+        "📱 Mobile Number"
+    )
+
+    email = st.text_input(
+        "📧 Email (Optional)"
+    )
+
+
+    # -----------------------------------
+    # Location
+    # -----------------------------------
+
+    district = st.selectbox(
+        "📍 Select District",
+        [
+            "Chennai",
+            "Coimbatore",
+            "Madurai",
+            "Trichy",
+            "Thanjavur",
+            "Mayiladuthurai",
+            "Sirkali",
+            "Salem",
+            "Tirunelveli",
+            "Other"
+        ]
+    )
+
+
+    # -----------------------------------
+    # Complaint Details
+    # -----------------------------------
+
+    complaint_title = st.text_input(
+        "📝 Complaint Title"
+    )
+
+    complaint_description = st.text_area(
+        "📄 Complaint Description (Tamil / English)",
+        height=150
+    )
+
+
+    # -----------------------------------
+    # Image Upload
+    # -----------------------------------
+
+    uploaded_file = st.file_uploader(
+        "📷 Upload Complaint Image",
+        type=[
+            "jpg",
+            "jpeg",
+            "png"
+        ]
+    )
+
+
+    # -----------------------------------
+    # Submit
+    # -----------------------------------
+
+    submitted = st.form_submit_button(
+        "🚀 Submit Complaint"
+    )
+
+
+# ---------------------------------------
+# Process Complaint
+# ---------------------------------------
+
+if submitted:
 
     if (
         citizen_name.strip() == ""
@@ -208,79 +196,131 @@ if st.button("🚀 Submit Complaint"):
 
     else:
 
-        # --------------------------------
-        # Translate Tamil Complaint
-        # --------------------------------
+        try:
 
-        english_complaint = translate_tamil(
-            complaint_description
-        )
+            # -----------------------------
+            # Upload Image
+            # -----------------------------
 
-        if english_complaint != complaint_description:
+            image_path = None
 
-            st.info(
-                f"🌐 Translated Complaint: {english_complaint}"
+            if uploaded_file is not None:
+
+                os.makedirs(
+                    "uploads",
+                    exist_ok=True
+                )
+
+                image_path = os.path.join(
+                    "uploads",
+                    uploaded_file.name
+                )
+
+                with open(
+                    image_path,
+                    "wb"
+                ) as file:
+
+                    file.write(
+                        uploaded_file.getbuffer()
+                    )
+
+
+            # -----------------------------
+            # Translate Tamil
+            # -----------------------------
+
+            english_complaint = translate_tamil(
+                complaint_description
+            )
+
+            st.session_state.translated_complaint = (
+                english_complaint
             )
 
 
-        # --------------------------------
-        # AI Prediction
-        # --------------------------------
+            # -----------------------------
+            # AI Prediction
+            # -----------------------------
 
-        ai_category, confidence = predict_complaint(
-            english_complaint
-        )
+            ai_category, confidence = predict_complaint(
+                english_complaint
+            )
 
-        department = ai_category
-
-        priority = predict_priority(
-            english_complaint
-        )
+            department = ai_category
 
 
-        # --------------------------------
-        # AI Complaint Summary
-        # --------------------------------
+            # -----------------------------
+            # Priority Prediction
+            # -----------------------------
 
-        complaint_summary = generate_summary(
-            english_complaint
-        )
-
-
-        # --------------------------------
-        # Save Complaint
-        # --------------------------------
-
-        complaint_id = save_complaint(
-            citizen_name,
-            mobile_number,
-            email,
-            district,
-            ai_category,
-            department,
-            confidence,
-            priority,
-            complaint_title,
-            complaint_description,
-            image_path
-        )
+            priority = predict_priority(
+                english_complaint
+            )
 
 
-        # --------------------------------
-        # Store Results in Session State
-        # --------------------------------
+            # -----------------------------
+            # AI Summary
+            # -----------------------------
 
-        st.session_state.department = department
-        st.session_state.ai_category = ai_category
-        st.session_state.confidence = confidence
-        st.session_state.priority = priority
-        st.session_state.complaint_summary = complaint_summary
-        st.session_state.complaint_id = complaint_id
-        st.session_state.complaint_submitted = True
+            complaint_summary = generate_summary(
+                english_complaint
+            )
+
+
+            # -----------------------------
+            # Save Complaint
+            # -----------------------------
+
+            complaint_id = save_complaint(
+                citizen_name,
+                mobile_number,
+                email,
+                district,
+                ai_category,
+                department,
+                confidence,
+                priority,
+                complaint_title,
+                complaint_description,
+                image_path
+            )
+
+
+            # -----------------------------
+            # Store Everything
+            # -----------------------------
+
+            st.session_state.department = department
+
+            st.session_state.ai_category = ai_category
+
+            st.session_state.confidence = confidence
+
+            st.session_state.priority = priority
+
+            st.session_state.complaint_summary = (
+                complaint_summary
+            )
+
+            st.session_state.complaint_id = (
+                complaint_id
+            )
+
+            st.session_state.complaint_submitted = True
+
+
+        except Exception as e:
+
+            st.session_state.complaint_submitted = False
+
+            st.error(
+                f"❌ Error submitting complaint: {e}"
+            )
 
 
 # ---------------------------------------
-# Display AI Analysis
+# Display Results
 # ---------------------------------------
 
 if st.session_state.complaint_submitted:
@@ -291,48 +331,103 @@ if st.session_state.complaint_submitted:
         "🤖 AI Analysis Result"
     )
 
+
+    # -----------------------------------
+    # Translation
+    # -----------------------------------
+
+    if (
+        st.session_state.translated_complaint
+        and
+        st.session_state.translated_complaint
+        != complaint_description
+    ):
+
+        st.info(
+            "🌐 Translated Complaint: "
+            + st.session_state.translated_complaint
+        )
+
+
+    # -----------------------------------
+    # Department
+    # -----------------------------------
+
     st.success(
-        f"🏢 Department: {st.session_state.department}"
+        "🏢 Department: "
+        + str(st.session_state.department)
     )
+
+
+    # -----------------------------------
+    # AI Category
+    # -----------------------------------
 
     st.info(
-        f"📂 AI Category: {st.session_state.ai_category}"
+        "📂 AI Category: "
+        + str(st.session_state.ai_category)
     )
+
+
+    # -----------------------------------
+    # Confidence
+    # -----------------------------------
 
     st.info(
-        f"📊 Confidence Score: {st.session_state.confidence}%"
+        "📊 Confidence Score: "
+        + str(st.session_state.confidence)
+        + "%"
     )
+
+
+    # -----------------------------------
+    # Summary
+    # -----------------------------------
 
     st.info(
-        f"📝 AI Complaint Summary: "
-        f"{st.session_state.complaint_summary}"
+        "📝 AI Complaint Summary: "
+        + str(st.session_state.complaint_summary)
     )
 
+
+    # -----------------------------------
+    # Priority
+    # -----------------------------------
 
     if st.session_state.priority == "High":
 
         st.error(
-            f"🚨 Priority: {st.session_state.priority}"
+            "🚨 Priority: High"
         )
 
     elif st.session_state.priority == "Medium":
 
         st.warning(
-            f"⚠️ Priority: {st.session_state.priority}"
+            "⚠️ Priority: Medium"
         )
 
     else:
 
         st.success(
-            f"✅ Priority: {st.session_state.priority}"
+            "✅ Priority: "
+            + str(st.session_state.priority)
         )
 
+
+    # -----------------------------------
+    # Success
+    # -----------------------------------
 
     st.success(
         "✅ Complaint Submitted Successfully!"
     )
 
+
+    # -----------------------------------
+    # Complaint ID
+    # -----------------------------------
+
     st.info(
-        f"🆔 Complaint ID: "
-        f"{st.session_state.complaint_id}"
+        "🆔 Complaint ID: "
+        + str(st.session_state.complaint_id)
     )
