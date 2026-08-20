@@ -1,0 +1,843 @@
+complaint_text,department
+Road is damaged near my village,Roads
+Pothole on the main road,Roads
+Road repair work is pending,Roads
+Broken road causing travel problems,Roads
+Village road needs improvement,Roads
+Main road requires maintenance,Roads
+Road is damaged after heavy rain,Roads
+Bridge repair required,Roads
+Footpath is broken,Roads
+Road construction stopped,Roads
+Road blocked due to construction,Roads
+Traffic issue because of bad road,Roads
+Road cracks need repair,Roads
+New road request from residents,Roads
+Road maintenance complaint,Roads
+Street light is not working,Electricity
+Power cut issue in my area,Electricity
+Frequent power failure complaint,Electricity
+Transformer problem in my street,Electricity
+Electric pole is damaged,Electricity
+Low voltage problem,Electricity
+Electricity bill issue,Electricity
+No power supply for many hours,Electricity
+Meter is not working,Electricity
+Need new electricity connection,Electricity
+Power fluctuation problem,Electricity
+Street lamps are not working,Electricity
+Electric wire problem in area,Electricity
+Electricity service complaint,Electricity
+Power supply delay complaint,Electricity
+Water pipe leakage problem,Water Supply
+Drinking water supply is not coming,Water Supply
+Water shortage in village,Water Supply
+Broken water pipeline,Water Supply
+Dirty water supply issue,Water Supply
+Water tank maintenance problem,Water Supply
+No water supply for two days,Water Supply
+Water connection problem,Water Supply
+Low water pressure complaint,Water Supply
+Water leakage near house,Water Supply
+Public water tap damaged,Water Supply
+Water quality issue,Water Supply
+Need new water connection,Water Supply
+Water supply timing problem,Water Supply
+Water distribution complaint,Water Supply
+Garbage not collected for many days,Sanitation
+Waste disposal problem in street,Sanitation
+Overflowing garbage bin complaint,Sanitation
+Drainage cleaning required,Sanitation
+Public toilet cleaning issue,Sanitation
+Street cleaning complaint,Sanitation
+Garbage vehicle not coming,Sanitation
+Dirty surroundings complaint,Sanitation
+Waste collection delay,Sanitation
+Open drainage problem,Sanitation
+Mosquito problem due to waste,Sanitation
+Need garbage removal,Sanitation
+Sanitation worker complaint,Sanitation
+Bad smell from garbage area,Sanitation
+Cleaning service issue,Sanitation
+Hospital service complaint,Health
+Doctor unavailable in hospital,Health
+Medicine availability issue,Health
+Hospital cleanliness problem,Health
+Ambulance service delay,Health
+Emergency service complaint,Health
+Need medical facility,Health
+Nurse service complaint,Health
+Health center problem,Health
+Patient care complaint,Health
+Government hospital issue,Health
+Medical equipment problem,Health
+Vaccination service complaint,Health
+Healthcare facility complaint,Health
+Doctor appointment problem,Health
+Crime reported in my area,Police
+Mobile theft complaint,Police
+Noise disturbance complaint,Police
+Suspicious activity reported,Police
+Lost document complaint,Police
+Safety issue in residential area,Police
+Robbery complaint,Police
+Illegal activity complaint,Police
+Need police assistance,Police
+Harassment complaint,Police
+Missing item complaint,Police
+Public safety concern,Police
+Vehicle theft complaint,Police
+Cyber crime complaint,Police
+Police response delay,Police
+Birth certificate application delayed,Revenue
+Death certificate issue,Revenue
+Income certificate pending,Revenue
+Community certificate delay,Revenue
+Patta document problem,Revenue
+Land record correction request,Revenue
+Property tax issue,Revenue
+Revenue office service delay,Revenue
+Certificate approval delay,Revenue
+Document verification problem,Revenue
+Bus service delay complaint,Transport
+Bus stop damaged,Transport
+Government bus timing problem,Transport
+Bus route request,Transport
+Bus ticket issue,Transport
+Driver complaint,Transport
+Conductor complaint,Transport
+Bus not available in village,Transport
+Transport facility problem,Transport
+Need additional bus service,Transport
+Park maintenance issue,Parks
+Children playground damaged,Parks
+Public garden needs cleaning,Parks
+Broken park bench complaint,Parks
+Tree cutting complaint in park,Parks
+Walking path damaged,Parks
+Park lighting problem,Parks
+Need new public park,Parks
+Grass maintenance issue,Parks
+Fountain not working in park,Parks
+Garden cleaning required,Parks
+Park equipment damaged,Parks
+Public park safety issue,Parks
+Park renovation request,Parks
+Open space maintenance complaint,Parks
+Municipality office service delay,Municipality
+Public drainage problem,Municipality
+Street cleaning request,Municipality
+Municipal tax payment issue,Municipality
+Shop license problem,Municipality
+Public service complaint,Municipality
+Civic issue reported,Municipality
+Municipal worker complaint,Municipality
+Street maintenance request,Municipality
+Local area development request,Municipality
+Public facility maintenance issue,Municipality
+Municipality complaint pending,Municipality
+Waste management issue,Municipality
+Public infrastructure problem,Municipality
+Municipal service delay,Municipality
+Road has many cracks after rain,Roads
+Large pothole causing accidents,Roads
+Road surface is damaged,Roads
+Village connecting road is poor,Roads
+Road repair request pending,Roads
+Need immediate road maintenance,Roads
+Broken bridge creates transport problem,Roads
+Road is unsafe during night,Roads
+Damaged street pavement complaint,Roads
+Road expansion work required,Roads
+Road work quality is poor,Roads
+Road repair stopped midway,Roads
+Mud road needs improvement,Roads
+Roadside cleaning required,Roads
+Traffic congestion due to road damage,Roads
+Road construction delay complaint,Roads
+Damaged speed breaker complaint,Roads
+Need new road in residential area,Roads
+Road drainage problem,Roads
+Heavy vehicle damaged the road,Roads
+Road condition is very bad,Roads
+Street road requires repair,Roads
+Public road maintenance issue,Roads
+Road accident risk due to pothole,Roads
+Road inspection request,Roads
+Broken street light pole complaint,Electricity
+Electricity supply interrupted frequently,Electricity
+Power outage complaint in village,Electricity
+Transformer making noise,Electricity
+Electric pole replacement required,Electricity
+Voltage is very low,Electricity
+Electricity connection delay,Electricity
+Power meter reading problem,Electricity
+Electric bill correction request,Electricity
+Electric wire hanging dangerously,Electricity
+Street light repair request,Electricity
+Power cut during night,Electricity
+Electricity service not responding,Electricity
+New transformer required,Electricity
+Electricity maintenance delay,Electricity
+Frequent voltage fluctuation,Electricity
+Power supply problem in street,Electricity
+Damaged electrical equipment complaint,Electricity
+Electric connection issue in house,Electricity
+Need street lights in area,Electricity
+Power failure affecting residents,Electricity
+Electricity complaint not resolved,Electricity
+Electricity board service issue,Electricity
+Current problem in locality,Electricity
+Electric repair work pending,Electricity
+Water supply stopped in my area,Water Supply
+No drinking water available,Water Supply
+Water pipeline damaged near street,Water Supply
+Water leakage from main pipe,Water Supply
+Water supply is irregular,Water Supply
+Water tank cleaning required,Water Supply
+Water connection request pending,Water Supply
+Water pressure is very low,Water Supply
+Dirty water coming from tap,Water Supply
+Public tap is not working,Water Supply
+Water pipe repair required,Water Supply
+Water shortage during summer,Water Supply
+Water distribution problem,Water Supply
+Need drinking water facility,Water Supply
+Water tanker service delay,Water Supply
+Broken water valve complaint,Water Supply
+Water pipeline maintenance required,Water Supply
+Water quality is poor,Water Supply
+No water supply in street,Water Supply
+Water meter problem complaint,Water Supply
+Water storage issue,Water Supply
+Water supply complaint pending,Water Supply
+Leakage near water tank,Water Supply
+Water board service problem,Water Supply
+Garbage dumping in public area,Sanitation
+Garbage collection is delayed,Sanitation
+Waste is not removed from street,Sanitation
+Drain blockage complaint,Sanitation
+Sewage overflow problem,Sanitation
+Bad smell from drainage,Sanitation
+Street garbage problem,Sanitation
+Need regular cleaning service,Sanitation
+Dustbin overflow complaint,Sanitation
+Public toilet maintenance issue,Sanitation
+Mosquito problem near drainage,Sanitation
+Waste management problem,Sanitation
+Cleaning workers not available,Sanitation
+Garbage vehicle delay complaint,Sanitation
+Open sewage problem,Sanitation
+Drain cleaning required immediately,Sanitation
+Dirty public place complaint,Sanitation
+Waste accumulation near house,Sanitation
+Sanitation work pending,Sanitation
+Garbage collection schedule problem,Sanitation
+Need more dustbins in area,Sanitation
+Drainage water overflow,Sanitation
+Unclean street complaint,Sanitation
+Waste disposal issue,Sanitation
+Public hygiene problem,Sanitation
+Sanitation department response delay,Sanitation
+Hospital service is very slow,Health
+Doctor consultation delay,Health
+Medical staff unavailable,Health
+Hospital waiting time problem,Health
+Medicine stock not available,Health
+Need better health facilities,Health
+Government clinic service issue,Health
+Ambulance reached late,Health
+Emergency care problem,Health
+Hospital equipment maintenance issue,Health
+Health center is not functioning,Health
+Doctor appointment unavailable,Health
+Patient service complaint,Health
+Need more doctors in hospital,Health
+Medical treatment delay complaint,Health
+Vaccination center problem,Health
+Health worker response delay,Health
+Hospital cleanliness needs improvement,Health
+Medical facility request,Health
+Poor patient care complaint,Health
+Healthcare service delay,Health
+Need emergency medical support,Health
+Medicine supply delay,Health
+Clinic maintenance issue,Health
+Public health service complaint,Health
+Police complaint not registered,Police
+Police response is delayed,Police
+Need immediate police help,Police
+Theft case reported,Police
+Property theft complaint,Police
+Neighbour dispute complaint,Police
+Public disturbance complaint,Police
+Unsafe area complaint,Police
+Suspicious person reported,Police
+Missing person complaint,Police
+Cyber fraud complaint,Police
+Online scam complaint,Police
+Need police verification,Police
+Traffic violation complaint,Police
+Illegal activity reported,Police
+Police patrol required,Police
+Law and order problem,Police
+Harassment issue reported,Police
+Crime investigation delay,Police
+Lost mobile phone complaint,Police
+Police station service issue,Police
+Emergency police assistance required,Police
+Police action pending,Police
+Birth certificate correction request,Revenue
+Birth certificate not received,Revenue
+Death certificate application delay,Revenue
+Income certificate verification pending,Revenue
+Community certificate request pending,Revenue
+Residence certificate issue,Revenue
+Patta transfer problem,Revenue
+Land ownership document issue,Revenue
+Chitta document not available,Revenue
+Property tax record problem,Revenue
+Revenue office response delay,Revenue
+Government certificate approval delay,Revenue
+Online revenue application problem,Revenue
+Land survey request pending,Revenue
+Revenue document correction request,Revenue
+Tax receipt issue,Revenue
+Need property document support,Revenue
+Certificate download problem,Revenue
+Revenue department complaint pending,Revenue
+Land registration issue,Revenue
+Bus arrival delay complaint,Transport
+Government bus service problem,Transport
+Bus frequency is low,Transport
+Need new bus route,Transport
+Bus stop facility problem,Transport
+Bus shelter damaged,Transport
+Bus conductor behaviour complaint,Transport
+Bus driver complaint,Transport
+Public transport not available,Transport
+School bus service problem,Transport
+Bus timing changed without notice,Transport
+Transport facility required,Transport
+Bus maintenance issue,Transport
+Overcrowded bus complaint,Transport
+Bus route extension request,Transport
+Poor transport service,Transport
+Bus service stopped complaint,Transport
+Need additional buses,Transport
+Transport department response delay,Transport
+Park cleaning required,Parks
+Children play area damaged,Parks
+Public garden maintenance problem,Parks
+Park lights not working,Parks
+Walking track damaged,Parks
+Tree maintenance complaint,Parks
+Park equipment repair required,Parks
+Need more plants in park,Parks
+Garden waste cleaning issue,Parks
+Park safety problem,Parks
+Municipality garbage issue,Municipality
+Street maintenance complaint,Municipality
+Public drainage repair request,Municipality
+Municipal tax issue,Municipality
+Shop license renewal problem,Municipality
+Public building maintenance issue,Municipality
+Civic service delay,Municipality
+Municipal office complaint,Municipality
+Local development request,Municipality
+Street cleaning service issue,Municipality
+Road damaged due to heavy vehicle movement,Roads
+Potholes increasing on village road,Roads
+Road repair needed near school,Roads
+Damaged road causing traffic issues,Roads
+Road is not maintained properly,Roads
+Need urgent road renovation,Roads
+Broken road affecting public transport,Roads
+Road surface became uneven,Roads
+Road repair complaint from residents,Roads
+Road condition is unsafe,Roads
+Road construction work incomplete,Roads
+Need street road improvement,Roads
+Damaged road after flood,Roads
+Road maintenance work delayed,Roads
+Village connecting road damaged,Roads
+Road has deep potholes,Roads
+Roadside area needs repair,Roads
+Road development request,Roads
+Road repair materials not available,Roads
+Poor quality road construction,Roads
+Road blocked by damaged structure,Roads
+Need new road facility,Roads
+Broken pavement complaint,Roads
+Public road safety issue,Roads
+Street light not working at night,Electricity
+Power supply stopped suddenly,Electricity
+Frequent electricity interruption,Electricity
+Transformer repair required,Electricity
+Electric pole replacement request,Electricity
+Power cut affecting homes,Electricity
+Electricity connection approval delay,Electricity
+Damaged electric cable complaint,Electricity
+Street lighting problem in area,Electricity
+High voltage problem complaint,Electricity
+Low current supply issue,Electricity
+Electric meter reading error,Electricity
+Electricity bill payment problem,Electricity
+Power restoration delay,Electricity
+Need electricity service support,Electricity
+Electric line maintenance required,Electricity
+Power failure in residential area,Electricity
+New street light installation request,Electricity
+Electricity complaint unresolved,Electricity
+Transformer overload problem,Electricity
+Electricity board service delay,Electricity
+Power fluctuation damaging appliances,Electricity
+Need electricity pole repair,Electricity
+Electrical maintenance pending,Electricity
+Power connection problem,Electricity
+Water supply unavailable in locality,Water Supply
+Water pipeline broken near road,Water Supply
+Drinking water problem in village,Water Supply
+Water supply interruption complaint,Water Supply
+Water leakage from underground pipe,Water Supply
+Water tank repair request,Water Supply
+Water quality testing required,Water Supply
+Water pressure problem in houses,Water Supply
+Water supply not regular,Water Supply
+Need water pipeline replacement,Water Supply
+Public water facility damaged,Water Supply
+Water shortage complaint during summer,Water Supply
+Water connection approval delay,Water Supply
+Water valve leakage issue,Water Supply
+Water supply maintenance pending,Water Supply
+Dirty water received from tap,Water Supply
+Water storage problem,Water Supply
+Need additional water facility,Water Supply
+Water distribution delay,Water Supply
+Water department response delay,Water Supply
+Water pipe damage complaint,Water Supply
+No drinking water for residents,Water Supply
+Water supply schedule problem,Water Supply
+Water tanker service required,Water Supply
+Water infrastructure problem,Water Supply
+Road repair work stopped suddenly,Roads
+Road widening request from public,Roads
+Damaged road near market area,Roads
+Road maintenance required immediately,Roads
+Broken village road complaint,Roads
+Road safety improvement request,Roads
+Road damaged by rain water,Roads
+Need proper road facilities,Roads
+Road construction quality complaint,Roads
+Road cleaning and repair needed,Roads
+Pothole filling work required,Roads
+Road problem affecting daily travel,Roads
+Public road improvement request,Roads
+Road repair pending for months,Roads
+Street road damage complaint,Roads
+Electricity failure during peak hours,Electricity
+Electric transformer damaged,Electricity
+Power supply issue in locality,Electricity
+Electricity maintenance complaint,Electricity
+Street lamp repair required,Electricity
+Power outage not resolved,Electricity
+Electric connection service delay,Electricity
+Electric wire replacement required,Electricity
+Power meter damage complaint,Electricity
+Electricity department support needed,Electricity
+Transformer maintenance required,Electricity
+Electric supply problem in village,Electricity
+Street lighting installation request,Electricity
+Electricity service interruption,Electricity
+Power issue affecting businesses,Electricity
+Water pipe burst complaint,Water Supply
+Water supply stopped suddenly,Water Supply
+Need regular drinking water supply,Water Supply
+Water pipeline repair work pending,Water Supply
+Water contamination complaint,Water Supply
+Water shortage affecting residents,Water Supply
+Water connection issue pending,Water Supply
+Public tap water problem,Water Supply
+Water tank leakage complaint,Water Supply
+Water supply infrastructure repair,Water Supply
+Water distribution system problem,Water Supply
+Water service complaint unresolved,Water Supply
+Need new public water tap,Water Supply
+Water pipeline blockage issue,Water Supply
+Water pressure reduced suddenly,Water Supply
+Garbage collection not happening regularly,Sanitation
+Waste dumped near residential area,Sanitation
+Drainage blockage complaint,Sanitation
+Sewage water flowing on road,Sanitation
+Need street cleaning service,Sanitation
+Garbage accumulation problem,Sanitation
+Public area needs cleaning,Sanitation
+Dustbin damaged complaint,Sanitation
+Waste removal delayed,Sanitation
+Drain maintenance required,Sanitation
+Bad smell from waste area,Sanitation
+Garbage vehicle service problem,Sanitation
+Mosquito breeding due to waste,Sanitation
+Open drainage needs repair,Sanitation
+Sanitation workers not available,Sanitation
+Hospital staff behaviour complaint,Health
+Doctor service delay complaint,Health
+Medical facility improvement request,Health
+Emergency treatment delay,Health
+Medicine availability problem,Health
+Health center maintenance issue,Health
+Need more hospital facilities,Health
+Patient waiting time complaint,Health
+Medical equipment not working,Health
+Ambulance service problem,Health
+Government clinic issue,Health
+Health worker unavailable,Health
+Vaccination appointment problem,Health
+Hospital cleanliness complaint,Health
+Public healthcare service delay,Health
+Police assistance required urgently,Police
+Crime complaint pending,Police
+Theft incident reported,Police
+Need police investigation,Police
+Safety problem in neighbourhood,Police
+Police station service complaint,Police
+Lost mobile complaint,Police
+Vehicle accident complaint,Police
+Cyber fraud complaint reported,Police
+Public disturbance issue,Police
+Police patrol request,Police
+Missing person report,Police
+Law and order complaint,Police
+Police response time issue,Police
+Park cleaning service required,Parks
+Public park maintenance problem,Parks
+Children play area repair needed,Parks
+Park gate is damaged,Parks
+Broken bench in public park,Parks
+Park grass needs maintenance,Parks
+Tree maintenance required in park,Parks
+Park walking path damaged,Parks
+Public garden requires cleaning,Parks
+Park lights are not working,Parks
+Need more trees in public park,Parks
+Park equipment repair request,Parks
+Garden waste removal required,Parks
+Park water facility problem,Parks
+Public park safety complaint,Parks
+Need new playground equipment,Parks
+Park is not maintained properly,Parks
+Walking track repair required,Parks
+Park cleanliness complaint,Parks
+Open park area improvement request,Parks
+Children park facility problem,Parks
+Park security issue complaint,Parks
+Public garden development request,Parks
+Park maintenance work pending,Parks
+Need additional park facilities,Parks
+Broken fountain in park,Parks
+Park entrance repair required,Parks
+Tree planting request in park,Parks
+Park area needs improvement,Parks
+Garden worker complaint,Parks
+Park service delay complaint,Parks
+Public green area maintenance issue,Parks
+Park equipment damaged complaint,Parks
+Need regular park cleaning,Parks
+Park boundary wall damaged,Parks
+Park improvement request from residents,Parks
+Park facility complaint,Parks
+Park repair work delayed,Parks
+Community park issue,Parks
+Municipality service request pending,Municipality
+Street maintenance problem,Municipality
+Public drainage repair required,Municipality
+Municipal office response delay,Municipality
+Local area cleaning complaint,Municipality
+Municipality worker service complaint,Municipality
+Street repair request,Municipality
+Civic problem reported,Municipality
+Public infrastructure complaint,Municipality
+Local road cleaning problem,Municipality
+Public building maintenance required,Municipality
+Municipal service delay complaint,Municipality
+Need better civic facilities,Municipality
+Town development request,Municipality
+Public area improvement complaint,Municipality
+Drainage maintenance problem,Municipality
+Street maintenance work delayed,Municipality
+Public property damage complaint,Municipality
+Local administration service issue,Municipality
+Municipality support required,Municipality
+Public service facility problem,Municipality
+Municipal license issue,Municipality
+Town cleanliness complaint,Municipality
+Civic maintenance request,Municipality
+Municipality department response issue,Municipality
+Local government service delay,Municipality
+Public complaint not resolved,Municipality
+Municipal office issue,Municipality
+Need municipal inspection,Municipality
+Public infrastructure repair request,Municipality
+Local development work pending,Municipality
+Municipality maintenance complaint,Municipality
+Community service issue,Municipality
+Public utility problem,Municipality
+Area development complaint,Municipality
+Municipal support request,Municipality
+Civic facility repair required,Municipality
+Income certificate application pending,Revenue
+Community certificate verification delay,Revenue
+Birth certificate correction issue,Revenue
+Death certificate request pending,Revenue
+Property document problem,Revenue
+Patta name change request,Revenue
+Land record update problem,Revenue
+Chitta document correction request,Revenue
+Revenue office service complaint,Revenue
+Certificate approval delay complaint,Revenue
+Government document issue,Revenue
+Land survey request,Revenue
+Property tax record correction,Revenue
+Revenue application status problem,Revenue
+Need income certificate urgently,Revenue
+Online certificate application issue,Revenue
+Land ownership verification problem,Revenue
+Revenue document processing delay,Revenue
+Certificate renewal problem,Revenue
+Revenue officer assistance required,Revenue
+Land measurement request,Revenue
+Government record correction request,Revenue
+Property registration document issue,Revenue
+Revenue department service delay,Revenue
+Village administrative service complaint,Revenue
+Need community certificate support,Revenue
+Certificate submission problem,Revenue
+Land document verification delay,Revenue
+Revenue enquiry request,Revenue
+Government scheme document issue,Revenue
+Revenue record mismatch complaint,Revenue
+Tax document problem,Revenue
+Patta document pending,Revenue
+Chitta record not available,Revenue
+Property survey delay,Revenue
+Revenue complaint not resolved,Revenue
+Document verification pending,Revenue
+Land related complaint,Revenue
+Revenue service improvement request,Revenue
+Certificate delivery delay,Revenue
+Government bus service delay,Transport
+Bus route problem complaint,Transport
+Need additional bus facility,Transport
+Bus stop maintenance issue,Transport
+Bus timing inconvenience,Transport
+Public transport shortage,Transport
+Bus ticket service problem,Transport
+Bus conductor service issue,Transport
+Bus overcrowding complaint,Transport
+Transport service improvement request,Transport
+Bus shelter repair required,Transport
+School bus facility issue,Transport
+Public bus maintenance problem,Transport
+Transport department complaint,Transport
+Bus service stopped suddenly,Transport
+Need new bus connection,Transport
+Bus frequency problem,Transport
+Poor bus condition complaint,Transport
+Bus travel safety issue,Transport
+Transport facility delay,Transport
+Bus schedule problem,Transport
+Public transport request,Transport
+Bus service not regular,Transport
+Bus stand maintenance complaint,Transport
+Transport infrastructure issue,Transport
+Bus operation problem,Transport
+Need more government buses,Transport
+Bus passenger facility problem,Transport
+Transport response delay,Transport
+Bus route change complaint,Transport
+Bus availability problem,Transport
+Public transport improvement required,Transport
+Bus maintenance delay,Transport
+Transport service complaint pending,Transport
+Bus stop facility request,Transport
+Village bus connectivity problem,Transport
+Transport support required,Transport
+Garbage collection service is poor,Sanitation
+Waste not removed from street,Sanitation
+Drain cleaning work required,Sanitation
+Sewage leakage problem,Sanitation
+Public toilet maintenance required,Sanitation
+Garbage dumping complaint,Sanitation
+Need regular waste collection,Sanitation
+Street waste problem,Sanitation
+Drain water overflow issue,Sanitation
+Waste management service delay,Sanitation
+Garbage bin replacement request,Sanitation
+Cleaning work not completed,Sanitation
+Dirty public area complaint,Sanitation
+Mosquito problem near garbage area,Sanitation
+Sanitation service improvement request,Sanitation
+Open drainage cleaning required,Sanitation
+Waste accumulation complaint,Sanitation
+Garbage vehicle service delay,Sanitation
+Public hygiene issue,Sanitation
+Need more garbage bins,Sanitation
+Street cleaning not done,Sanitation
+Waste disposal problem,Sanitation
+Sanitation department complaint,Sanitation
+Garbage removal pending,Sanitation
+Public place cleaning required,Sanitation
+Drain maintenance delay,Sanitation
+Unclean surroundings complaint,Sanitation
+Waste collection problem,Sanitation
+Garbage overflow near house,Sanitation
+Sewage maintenance issue,Sanitation
+Cleaning worker not available,Sanitation
+Need immediate sanitation action,Sanitation
+Waste segregation problem,Sanitation
+Dirty road area complaint,Sanitation
+Public cleanliness issue,Sanitation
+Drain repair request,Sanitation
+Garbage disposal delay,Sanitation
+Community cleaning request,Sanitation
+Waste problem near school,Sanitation
+Drainage service complaint,Sanitation
+Cleaning facility issue,Sanitation
+Sanitation response delay,Sanitation
+Hospital treatment delay complaint,Health
+Doctor consultation problem,Health
+Medical service unavailable,Health
+Need better hospital facilities,Health
+Medicine supply shortage,Health
+Hospital emergency service issue,Health
+Patient treatment complaint,Health
+Health center service delay,Health
+Medical staff shortage complaint,Health
+Ambulance response problem,Health
+Doctor availability issue,Health
+Hospital equipment repair needed,Health
+Healthcare support request,Health
+Government hospital service problem,Health
+Medical appointment delay,Health
+Health facility maintenance issue,Health
+Need ambulance service,Health
+Medicine distribution problem,Health
+Hospital cleanliness issue,Health
+Patient care improvement request,Health
+Clinic service complaint,Health
+Vaccination service delay,Health
+Health worker response problem,Health
+Medical assistance required,Health
+Emergency healthcare complaint,Health
+Hospital registration problem,Health
+Medical report delay complaint,Health
+Need new health center,Health
+Public health service issue,Health
+Hospital staff complaint,Health
+Healthcare facility request,Health
+Medicine availability delay,Health
+Health department complaint,Health
+Medical equipment issue,Health
+Poor hospital service complaint,Health
+Health checkup facility problem,Health
+Patient support required,Health
+Clinic maintenance request,Health
+Medical service improvement needed,Health
+Health scheme issue,Health
+Government clinic problem,Health
+Health care delay complaint,Health
+Hospital support request,Health
+Health emergency assistance,Health
+Police complaint registration delay,Police
+Need police protection,Police
+Theft complaint pending,Police
+Vehicle theft report,Police
+Public safety issue,Police
+Police help required,Police
+Missing item report,Police
+Online cheating complaint,Police
+Illegal activity report,Police
+Safety concern in area,Police
+Need police patrol,Police
+Harassment report,Police
+Lost document report,Police
+Crime prevention request,Police
+Emergency police support,Police
+Suspicious activity complaint,Police
+Robbery case report,Police
+Police verification request,Police
+Neighbourhood security problem,Police
+Crime report submission issue,Police
+Police investigation request,Police
+Public safety improvement request,Police
+Police department service delay,Police
+Complaint follow up request,Police
+Security concern complaint,Police
+Police assistance needed,Police
+Crime information report,Police
+Emergency response problem,Police
+Police support request,Police
+Local safety complaint,Police
+Police enquiry request,Police
+Crime complaint unresolved,Police
+Police service improvement request,Police
+Bus conductor refused to issue a ticket,Transport
+Government bus did not stop at the bus stop,Transport
+Bus service is unavailable during morning hours,Transport
+Bus route does not cover our village,Transport
+Bus shelter has no seating facility,Transport
+Government bus is running very late every day,Transport
+Bus service frequency is insufficient,Transport
+Bus passengers are facing overcrowding,Transport
+Bus route needs to connect nearby villages,Transport
+Bus stop signboard is missing,Transport
+Bus timetable information is not available,Transport
+Government bus broke down frequently,Transport
+Bus service is irregular on this route,Transport
+Need a bus for our village route,Transport
+Bus depot service complaint,Transport
+Garbage collection workers skipped our street,Sanitation
+Household waste is not collected regularly,Sanitation
+Garbage remains outside houses after collection day,Sanitation
+Waste collection vehicle missed our locality,Sanitation
+Garbage is accumulating beside the public road,Sanitation
+Sewage is overflowing from the drainage line,Sanitation
+Drain is blocked with waste materials,Sanitation
+Public garbage bin is overflowing with household waste,Sanitation
+Waste is scattered around the garbage collection point,Sanitation
+Street garbage has not been cleared,Sanitation
+Sewage water is creating an unhygienic area,Sanitation
+Garbage collection schedule is not followed,Sanitation
+Waste collection vehicle is not visiting our street,Sanitation
+Drain cleaning has not been completed,Sanitation
+Household waste disposal service is delayed,Sanitation
+Municipality has not responded to my civic complaint,Municipality
+Municipal office has delayed my service request,Municipality
+Local civic facility requires municipal attention,Municipality
+Municipal staff have not processed my request,Municipality
+Municipal tax office service is delayed,Municipality
+Town civic infrastructure needs improvement,Municipality
+Municipal office enquiry is pending,Municipality
+Local body service request is unresolved,Municipality
+Municipal inspection has not been conducted,Municipality
+Civic administration service is delayed,Municipality
+Municipal license application is pending,Municipality
+Municipality has not responded to a public facility request,Municipality
+Local government civic service is unavailable,Municipality
+Municipal office support is required,Municipality
+Civic facility repair request is pending,Municipality
+Road repair is required on the highway,Roads
+Potholes are present across the entire road,Roads
+Road surface has become severely uneven,Roads
+Road repair is needed near the bus stop,Roads
+The connecting road to our village is damaged,Roads
+Road construction has been incomplete for months,Roads
+Pothole filling has not been completed,Roads
+Road pavement is damaged along the roadside,Roads
+Road requires resurfacing,Roads
+Road shoulder is damaged and needs repair,Roads
+Road construction quality is poor in our area,Roads
+Road maintenance has been delayed,Roads
+Road is damaged near the railway crossing,Roads
+Road repair is needed near the hospital,Roads
+Village road has become unsafe for vehicles,Roads
