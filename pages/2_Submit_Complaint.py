@@ -165,6 +165,15 @@ def translate_tamil(text):
 
 
 # ---------------------------------------
+# Initialize Session State
+# ---------------------------------------
+
+if "complaint_submitted" not in st.session_state:
+
+    st.session_state.complaint_submitted = False
+
+
+# ---------------------------------------
 # Submit Complaint
 # ---------------------------------------
 
@@ -223,50 +232,6 @@ if st.button("🚀 Submit Complaint"):
 
 
         # --------------------------------
-        # AI Result Display
-        # --------------------------------
-
-        st.subheader(
-            "🤖 AI Analysis Result"
-        )
-
-        st.success(
-            f"🏢 Department: {department}"
-        )
-
-        st.info(
-            f"📂 AI Category: {ai_category}"
-        )
-
-        st.info(
-            f"📊 Confidence Score: {confidence}%"
-        )
-
-        st.info(
-            f"📝 AI Complaint Summary: {complaint_summary}"
-        )
-
-
-        if priority == "High":
-
-            st.error(
-                f"🚨 Priority: {priority}"
-            )
-
-        elif priority == "Medium":
-
-            st.warning(
-                f"⚠️ Priority: {priority}"
-            )
-
-        else:
-
-            st.success(
-                f"✅ Priority: {priority}"
-            )
-
-
-        # --------------------------------
         # Save Complaint
         # --------------------------------
 
@@ -285,12 +250,75 @@ if st.button("🚀 Submit Complaint"):
         )
 
 
-        st.divider()
+        # --------------------------------
+        # Store Result
+        # --------------------------------
+
+        st.session_state.complaint_submitted = True
+
+        st.session_state.ai_category = ai_category
+        st.session_state.department = department
+        st.session_state.confidence = confidence
+        st.session_state.priority = priority
+        st.session_state.complaint_summary = complaint_summary
+        st.session_state.complaint_id = complaint_id
+
+
+# ---------------------------------------
+# AI Result Display
+# ---------------------------------------
+
+if st.session_state.complaint_submitted:
+
+    st.subheader(
+        "🤖 AI Analysis Result"
+    )
+
+    st.success(
+        f"🏢 Department: {st.session_state.department}"
+    )
+
+    st.info(
+        f"📂 AI Category: {st.session_state.ai_category}"
+    )
+
+    st.info(
+        f"📊 Confidence Score: {st.session_state.confidence}%"
+    )
+
+    st.info(
+        f"📝 AI Complaint Summary: {st.session_state.complaint_summary}"
+    )
+
+
+    priority = st.session_state.priority
+
+
+    if priority == "High":
+
+        st.error(
+            f"🚨 Priority: {priority}"
+        )
+
+    elif priority == "Medium":
+
+        st.warning(
+            f"⚠️ Priority: {priority}"
+        )
+
+    else:
 
         st.success(
-            "✅ Complaint Submitted Successfully!"
+            f"✅ Priority: {priority}"
         )
 
-        st.info(
-            f"🆔 Complaint ID: {complaint_id}"
-        )
+
+    st.divider()
+
+    st.success(
+        "✅ Complaint Submitted Successfully!"
+    )
+
+    st.info(
+        f"🆔 Complaint ID: {st.session_state.complaint_id}"
+    )
