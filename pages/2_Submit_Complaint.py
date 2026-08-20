@@ -158,7 +158,6 @@ def translate_tamil(text):
     cleaned_text = text.strip()
 
     if cleaned_text in tamil_complaints:
-
         return tamil_complaints[cleaned_text]
 
     return text
@@ -169,8 +168,25 @@ def translate_tamil(text):
 # ---------------------------------------
 
 if "complaint_submitted" not in st.session_state:
-
     st.session_state.complaint_submitted = False
+
+if "department" not in st.session_state:
+    st.session_state.department = ""
+
+if "ai_category" not in st.session_state:
+    st.session_state.ai_category = ""
+
+if "confidence" not in st.session_state:
+    st.session_state.confidence = 0
+
+if "priority" not in st.session_state:
+    st.session_state.priority = ""
+
+if "complaint_summary" not in st.session_state:
+    st.session_state.complaint_summary = ""
+
+if "complaint_id" not in st.session_state:
+    st.session_state.complaint_id = ""
 
 
 # ---------------------------------------
@@ -251,24 +267,25 @@ if st.button("🚀 Submit Complaint"):
 
 
         # --------------------------------
-        # Store Result
+        # Store Results in Session State
         # --------------------------------
 
-        st.session_state.complaint_submitted = True
-
-        st.session_state.ai_category = ai_category
         st.session_state.department = department
+        st.session_state.ai_category = ai_category
         st.session_state.confidence = confidence
         st.session_state.priority = priority
         st.session_state.complaint_summary = complaint_summary
         st.session_state.complaint_id = complaint_id
+        st.session_state.complaint_submitted = True
 
 
 # ---------------------------------------
-# AI Result Display
+# Display AI Analysis
 # ---------------------------------------
 
 if st.session_state.complaint_submitted:
+
+    st.divider()
 
     st.subheader(
         "🤖 AI Analysis Result"
@@ -287,38 +304,35 @@ if st.session_state.complaint_submitted:
     )
 
     st.info(
-        f"📝 AI Complaint Summary: {st.session_state.complaint_summary}"
+        f"📝 AI Complaint Summary: "
+        f"{st.session_state.complaint_summary}"
     )
 
 
-    priority = st.session_state.priority
-
-
-    if priority == "High":
+    if st.session_state.priority == "High":
 
         st.error(
-            f"🚨 Priority: {priority}"
+            f"🚨 Priority: {st.session_state.priority}"
         )
 
-    elif priority == "Medium":
+    elif st.session_state.priority == "Medium":
 
         st.warning(
-            f"⚠️ Priority: {priority}"
+            f"⚠️ Priority: {st.session_state.priority}"
         )
 
     else:
 
         st.success(
-            f"✅ Priority: {priority}"
+            f"✅ Priority: {st.session_state.priority}"
         )
 
-
-    st.divider()
 
     st.success(
         "✅ Complaint Submitted Successfully!"
     )
 
     st.info(
-        f"🆔 Complaint ID: {st.session_state.complaint_id}"
+        f"🆔 Complaint ID: "
+        f"{st.session_state.complaint_id}"
     )
